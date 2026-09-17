@@ -1,0 +1,39 @@
+---
+title: "IO Intelligence"
+description: "Configure Strix with IO Intelligence models"
+---
+
+[IO Intelligence](https://io.net/) by io.net provides inference for open-weight models via an OpenAI-compatible API.
+
+## Setup
+
+```bash
+export STRIX_LLM="openai/deepseek-ai/DeepSeek-V4-Pro"
+export LLM_API_KEY="your-io-net-api-key"
+export LLM_API_BASE="https://api.intelligence.io.solutions/api/v1"
+```
+
+## Available Models
+
+| Model | Configuration |
+|-------|---------------|
+| DeepSeek V4 Pro | `openai/deepseek-ai/DeepSeek-V4-Pro` |
+| Kimi K3 | `openai/moonshotai/Kimi-K3` |
+| GLM-5.3 | `openai/zai-org/GLM-5.3` |
+| MiniMax M2.7 | `openai/MiniMaxAI/MiniMax-M2.7` |
+| DeepSeek R1 0528 | `openai/deepseek-ai/DeepSeek-R1-0528` |
+| GPT-OSS 120B | `openai/openai/gpt-oss-120b` |
+
+The full catalog is available from the `GET /models` endpoint.
+
+## Get API Key
+
+1. Sign up at [io.net](https://io.net/)
+2. Navigate to **API Keys** in your [dashboard](https://ai.io.net/ai/api-keys)
+3. Create a new key and copy it
+
+## Benefits
+
+- **OpenAI-compatible** — Drop-in replacement using `LLM_API_BASE`
+- **Open-weight variety** — DeepSeek, Kimi, GLM, Qwen, Llama, and more
+- **Function calling** — Tool/function calling is supported
