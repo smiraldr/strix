@@ -40,8 +40,8 @@
               "llm-providers/vertex",
               "llm-providers/bedrock",
               "llm-providers/azure",
-              "llm-providers/io-intelligence",
               "llm-providers/novita",
+              "llm-providers/io-intelligence",
               "llm-providers/local"
             ]
           },
